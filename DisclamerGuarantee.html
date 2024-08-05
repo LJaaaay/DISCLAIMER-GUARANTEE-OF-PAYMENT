@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+     <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Disclaimer / Guarantee of Payment</title>
+ <style>
+
+
+
+img {
+    margin-left: 150px;
+    float: right;
+    max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 350px;
+}
+.address {
+  float: right;
+}
+.PDFborder{
+    border: 2px solid black;
+    width: 900px;
+    height: 900px;
+    padding: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+<div class="PDFborder">
+    <div style="display: flex; justify-content: center;">
+    <div>
+        <h1><strong>DISCLAIMER / GUARANTEE OF PAYMENT</strong></h1>
+    </div>
+    <div>
+        <img src="file:///E:/XPD Global/XPDtryouts/PDF/xpdLogo.png" alt="XPD Logo">
+    </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:#0460FA;background-color:#0460FA">
+    <div class="container">
+    <div class="box">
+        <p>Date: <strong>[Date of creation ]</strong></p>
+        <p>To: <strong>{!NEURORED__Consignee__c}</strong></p>
+    </div>
+    <div class="box">
+        <p>Container: <strong>{!Transport_Order_Cargo_Container__c}</strong></p>
+        <p>MBL#: <strong>{!MBL__c}</strong></p>
+        <p>xpd file #: <strong>{!Name}</strong></p>
+    </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:#0460FA;background-color:#0460FA">
+    <p>Demurrage/Detention starts when the container is not returned before the last day of allowed “free time” (as per Arrival Notice). Demurrage will accumulate until the container is returned to Port/Depot. All customers are obligated to return empty container within free time provided by Shipping Line, in events of late return, Demurrage/Detention will be billed back to your account.</p>
+    <p>Re-use of the container for re-export must be confirmed prior empty return and request must be send before LFD to avoid charges.</p>
+    <p>Please acknowledge and sign disclaimer before Port/Rail yard arrival in order to receive full release from XPD Global Canada.</p><br><br><br>
+    <div style="text-align: center;">
+    <p>COMPANY: ________________________________________________________________</p>
+    <p>DATE: ____________________________________________________________________</p>
+    <p>PRINT NAME: ______________________________________________________________</p>
+    <p>SIGNATURE: _______________________________________________________________</p>
+    </div> <br><br><br>
+    <div class="address">
+    <p>XPD Global Canada</p>
+    <p>6 - 5810 Ambler Dr.,</p>
+    <p>Mississauga, ON L4W 4J5 Canada</p>
+    <p>canada@xpdglobal.com</p>
+    </div>
+</div>
+</body>
+</html>
+
